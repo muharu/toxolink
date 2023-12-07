@@ -1,0 +1,20 @@
+generator kysely {
+  provider = "prisma-kysely"
+  output   = "../src/server/db"
+  fileName = "types.ts"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Linktree {
+  id        Int      @id @default(autoincrement())
+  name      String   @unique
+  url       String   @unique
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("linktree")
+}
