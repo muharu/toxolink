@@ -8,6 +8,8 @@ export type Linktree = {
   id: Generated<number>
   name: string
   url: string
+  order: Generated<number>
+  isActive: Generated<boolean>
   created_at: Generated<Timestamp>
   updated_at: Timestamp
 }

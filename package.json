@@ -17,6 +17,10 @@
   "dependencies": {
     "@radix-ui/react-dialog": "^1.0.5",
     "@radix-ui/react-slot": "^1.0.2",
+    "@radix-ui/react-switch": "^1.0.3",
+    "@trpc/client": "next",
+    "@trpc/next": "next",
+    "@trpc/server": "next",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "kysely": "^0.26.3",
@@ -27,8 +31,12 @@
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^4.12.0",
+    "react-if": "^4.1.5",
+    "superjson": "^2.2.1",
+    "superstruct": "^1.0.3",
     "tailwind-merge": "^2.1.0",
     "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.22.4",
     "zustand": "^4.4.7"
   },
   "devDependencies": {
