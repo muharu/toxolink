@@ -1,21 +1,21 @@
-import { LinktreeDefaultOutput } from "~/server/api/linktree/linktree.schema"
-import { HandleChecked, LinktreeCard, PatchIsActive } from "./LinktreeCard"
+import { LinkDefaultOutput } from "~/server/api/links/link.schema"
+import { HandleChecked, LinkCard, PatchIsActive } from "./LinkCard"
 
-interface LinktreeCardListProps {
-  linkData?: LinktreeDefaultOutput
+interface LinkCardListProps {
+  linkData?: LinkDefaultOutput
   handleChecked: HandleChecked
   patchIsActive: PatchIsActive
 }
 
-export const LinktreeCardList = ({
+export const LinkCardList = ({
   linkData,
   handleChecked,
   patchIsActive,
-}: LinktreeCardListProps) => {
+}: LinkCardListProps) => {
   return (
     <div className="mt-4 flex flex-col gap-y-2">
       {linkData?.map((data) => (
-        <LinktreeCard
+        <LinkCard
           key={data.id}
           handleChecked={handleChecked}
           patchIsActive={patchIsActive}

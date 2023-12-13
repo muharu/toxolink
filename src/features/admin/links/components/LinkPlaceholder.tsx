@@ -1,6 +1,6 @@
 import { Card, CardContent } from "~/components/ui/card"
 
-export const LinktreePlaceholder = () => (
+export const LinkPlaceholder = () => (
   <Card className="animate-pulse shadow-lg">
     <CardContent className="p-3">
       <div className="flex justify-between">

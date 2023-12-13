@@ -1,8 +1,8 @@
-import { linktreeRoute } from "./linktree/linktree.controller"
+import { linkRoute } from "./links/link.controller"
 import { createTRPCRouter } from "./trpc"
 
 export const appRouter = createTRPCRouter({
-  linktree: linktreeRoute,
+  links: linkRoute,
 })
 
 export type AppRouter = typeof appRouter

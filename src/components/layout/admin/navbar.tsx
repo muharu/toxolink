@@ -1,7 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
 import { useRouter } from "next/router"
-import { AiTwotoneBell } from "react-icons/ai"
 import { CgMenuLeftAlt } from "react-icons/cg"
 import DefaultAvatar from "~/assets/default-avatar.jpg"
 import { Button } from "~/components/ui/button"
@@ -20,7 +19,7 @@ import { NavLink } from "./navigation-link"
 export const Navbar = () => {
   return (
     <header className="h-16 border-b-2 bg-background">
-      <div className="mx-4 flex h-full items-center justify-between lg:mr-10">
+      <div className="mx-4 flex h-full items-center justify-between">
         <div className="flex items-center gap-x-1">
           <HamburgerButtonTriggerDrawer />
           <Link
@@ -32,7 +31,6 @@ export const Navbar = () => {
           <Breadcrumb />
         </div>
         <div className="flex items-center gap-x-1.5">
-          <NotificationButton />
           <Avatar />
         </div>
       </div>
@@ -113,19 +111,6 @@ const Breadcrumb = () => {
     <h5 className="hidden text-sm font-medium lg:flex">
       {formattedBreadcrumbs}
     </h5>
-  )
-}
-
-const NotificationButton = () => {
-  return (
-    <Button
-      variant="ghost"
-      size="icon"
-      className="rounded-full"
-      aria-label="notification-icon"
-    >
-      <AiTwotoneBell className="h-6 w-6" />
-    </Button>
   )
 }
 

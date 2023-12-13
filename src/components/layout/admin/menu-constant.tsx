@@ -1,6 +1,6 @@
 import { BsGear } from "react-icons/bs"
-import { LuLayoutList } from "react-icons/lu"
 import { MdOutlineCategory } from "react-icons/md"
+import { RiLinksFill } from "react-icons/ri"
 import { TbBoxSeam, TbFileInvoice } from "react-icons/tb"
 import { VscDashboard } from "react-icons/vsc"
 
@@ -11,9 +11,9 @@ export const MENUS = [
     icon: <VscDashboard className="h-6 w-6" />,
   },
   {
-    title: "Linktree",
-    link: "/admin/linktree",
-    icon: <LuLayoutList className="h-6 w-6" />,
+    title: "Links",
+    link: "/admin/links",
+    icon: <RiLinksFill className="h-6 w-6" />,
   },
   {
     title: "Products",

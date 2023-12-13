@@ -12,13 +12,13 @@ export const usePatchIsActive = () => {
     return switchStates[id] ?? checked
   }
 
-  const mutation = trpc.linktree.patch.isActive.useMutation({
+  const mutation = trpc.links.patch.isActive.useMutation({
     onMutate: async ({ id, isActive }) => {
       setSwitchStates((prev) => ({ ...prev, [id]: isActive }))
       return { id, isActive }
     },
     onSettled: async () => {
-      await utils.linktree.get.all.invalidate()
+      await utils.links.get.all.invalidate()
     },
     trpc: {
       context: {

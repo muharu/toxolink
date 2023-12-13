@@ -1,10 +1,10 @@
 import { db } from "~/server/db"
-import { LinktreePatchIsActiveInput } from "./linktree.schema"
+import { LinkPatchIsActiveInput } from "./link.schema"
 
 export const findAllLink = async () => {
   return await db
-    .selectFrom("linktree")
-    .select(["id", "order", "name", "url", "isActive"])
+    .selectFrom("link")
+    .select(["id", "order", "name", "url", "is_active"])
     .orderBy("order", "asc")
     .execute()
 }
@@ -12,14 +12,14 @@ export const findAllLink = async () => {
 export const setIsActiveLinkById = async ({
   id,
   isActive,
-}: LinktreePatchIsActiveInput) => {
+}: LinkPatchIsActiveInput) => {
   return await db
-    .updateTable("linktree")
+    .updateTable("link")
     .where("id", "=", id)
     .set({
       id,
-      isActive,
+      is_active: isActive,
     })
-    .returning(["id", "order", "name", "url", "isActive"])
+    .returning(["id", "order", "name", "url", "is_active"])
     .execute()
 }

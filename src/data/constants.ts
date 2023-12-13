@@ -1,5 +1,5 @@
 export const BRAND = {
-  NAME: "Moro.thelabel",
+  NAME: "TOXOLINK",
   DESCRIPTION:
-    "Brand Fashion yang mengutamakan kenyamanan dengan kualitas bahan terbaik serta desain yang simpel dan stylish. Be Simple, Better Style!",
+    "Toxolink can help you assemble your products from different marketplaces in one link",
 }

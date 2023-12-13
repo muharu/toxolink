@@ -2,7 +2,7 @@ import { FaEye } from "react-icons/fa"
 import { Drawer } from "vaul"
 import { Button } from "~/components/ui/button"
 
-export const LinktreePreviewButton = () => {
+export const LinkPreviewButton = () => {
   return (
     <Drawer.Root shouldScaleBackground>
       <Drawer.Trigger asChild>

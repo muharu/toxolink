@@ -5,7 +5,7 @@ import { Switch } from "~/components/ui/switch"
 export type HandleChecked = (isActive: boolean, id: number) => boolean
 export type PatchIsActive = (params: { id: number; isActive: boolean }) => void
 
-interface LinktreeCardProps {
+interface LinkCardProps {
   name: string
   url: string
   isActive: boolean
@@ -14,14 +14,14 @@ interface LinktreeCardProps {
   patchIsActive: PatchIsActive
 }
 
-export const LinktreeCard = ({
+export const LinkCard = ({
   name,
   url,
   isActive,
   id,
   handleChecked,
   patchIsActive,
-}: LinktreeCardProps) => {
+}: LinkCardProps) => {
   return (
     <Card className="shadow-lg">
       <CardContent className="flex items-center justify-between p-3">
