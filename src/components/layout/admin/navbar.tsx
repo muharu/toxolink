@@ -24,7 +24,7 @@ export const Navbar = () => {
           <HamburgerButtonTriggerDrawer />
           <Link
             href="/admin/dashboard"
-            className="flex text-lg font-bold lg:hidden"
+            className="flex text-lg font-bold uppercase lg:hidden"
           >
             {BRAND.NAME}
           </Link>
@@ -55,7 +55,7 @@ const HamburgerButtonTriggerDrawer = () => {
       </SheetTrigger>
       <SheetContent side="left">
         <SheetHeader>
-          <SheetTitle className="text-2xl">
+          <SheetTitle className="text-2xl uppercase">
             <Link href="/admin/dashboard">{BRAND.NAME}</Link>
           </SheetTitle>
         </SheetHeader>

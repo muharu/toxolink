@@ -8,7 +8,7 @@ export const getAllLink = async () => {
   if (linkData.length === 0) {
     throw new TRPCError({
       code: "NOT_FOUND",
-      message: "Belum ada link yang ditambahkan",
+      message: "No links have been added yet",
     })
   }
 

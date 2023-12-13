@@ -1,5 +1,5 @@
 export const BRAND = {
-  NAME: "TOXOLINK",
+  NAME: "Toxolink",
   DESCRIPTION:
-    "Toxolink can help you assemble your products from different marketplaces in one link",
+    "Toxolink: Merge products from different marketplaces into one link.",
 }

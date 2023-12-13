@@ -7,7 +7,10 @@ import { NavLink } from "./navigation-link"
 export const Sidebar = () => {
   return (
     <aside className="hidden w-64 flex-col border-r lg:flex">
-      <Link href="/admin/dashboard" className="mx-auto my-5 text-2xl font-bold">
+      <Link
+        href="/admin/dashboard"
+        className="mx-auto my-5 text-2xl font-bold uppercase"
+      >
         {BRAND.NAME}
       </Link>
       <nav>

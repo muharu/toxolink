@@ -1,4 +1,5 @@
 export * from "./components/AddLinkButton"
+export * from "./components/EmptyLink"
 export * from "./components/LinkCard"
 export * from "./components/LinkCardList"
 export * from "./components/LinkCardListPlaceholder"

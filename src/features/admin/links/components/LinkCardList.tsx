@@ -19,6 +19,7 @@ export const LinkCardList = ({
           key={data.id}
           handleChecked={handleChecked}
           patchIsActive={patchIsActive}
+          isActive={data.is_active}
           {...data}
         />
       ))}
